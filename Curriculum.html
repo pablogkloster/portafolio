@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <!-- Unificamos estilos -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-menu">
+            <a class="header-menu-link" href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="presentacion">
+        <section class="presentacion-contenido">
+            <div class="bloque-titulo">
+                <h1 class="presentacion-contenido-titulo"><strong>Pablo Kloster</strong></h1>
+                <p class="presentacion-contenido-texto">Mis inicios en la programación</p>
+            </div>    
+
+            <h2 class="presentacion-contenido-titulo">Estudios</h2>
+            <div class="presentacion-contenido-texto">
+                <ul>
+                    <li>
+                        <p class="presentacion-enlaces-texto">Sumérgete en la programación con JavaScrip</p>
+                        Alura Cursos - <a class="presentacion-enlaces-modal" href="#" onclick="abrirModal('./assets/certificados/JavaScript.png')">Certificación</a>
+                    </li>
+                    <li>
+                        <p class="presentacion-enlaces-texto">Curso Git y GitHub: Repositorio, commit y versiones</p>
+                        Alura Cursos - <a class="presentacion-enlaces-modal" href="#" onclick="abrirModal('./assets/certificados/Git_GitHub.png')">Certificación</a>
+                    </li>
+                    <li>
+                        <p class="presentacion-enlaces-texto">Curso IA: Explorando el potencial de la Inteligencia Artificial Generativa</p>
+                        Alura Cursos - <a class="presentacion-enlaces-modal" href="#" onclick="abrirModal('./assets/certificados/IA.png')">Certificación</a>
+                    </li>
+                    <li>
+                        <p class="presentacion-enlaces-texto">Curso Aprendizaje con IA: personalizando tu rutina con ChatGPT</p>
+                        Alura Cursos - <a class="presentacion-enlaces-modal" href="#" onclick="abrirModal('./assets/certificados/ChatGPT.png')">Certificación</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="presentacion-contenido-titulo">Proyectos</h2>
+            <div class="presentacion-contenido-texto">
+                <ul>
+                    <li>
+                        <a class="presentacion-enlaces-modal" href="https://pablogkloster.github.io/challenge-amigo-secreto_esp-main/" target="_blank" rel="noopener noreferrer">
+                            <img class="logo-amigo" src="./assets/amigo-secreto.png" alt="logo amigo secreto">
+                            Amigo Secreto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="presentacion-contenido-titulo">Mis redes</h2>
+                <div class="presentacion-contenido-texto">
+                    <div class="presentacion-enlaces">
+                        <a class="presentacion-enlaces-link" href="https://github.com/pablogkloster/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/github.png" alt="logo github"> GitHub
+                        </a>
+                        <a class="presentacion-enlaces-link" href="https://www.linkedin.com/in/pablo-kloster/" target="_blank" rel="noopener noreferrer">
+                         <img src="./assets/linkedin.png" alt="logo linkedin"> LinkedIn
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <img class="foto" src="./assets/Imagen-Pablo.png" alt="Imagen de Pablo Kloster en PC">
+    </main>
+
+    <!-- Modal fuera del main -->
+    <div id="miModal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <!-- Ahora la imagen usa también la clase .foto -->
+        <div class="modal-contenido">
+            <img class="foto" id="imgModal" alt="Certificado ampliado">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Desarrollado por Pablo Kloster</p>
+    </footer>
+
+    <!-- Script para el modal -->
+    <script src="./script.js"></script>
+</body>
+</html>
+
