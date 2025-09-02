@@ -22,8 +22,7 @@ Este es un **proyecto personal de portafolio web** desarrollado en **HTML, CSS y
 
 ## 🚀 Demo  
 
-👉 [Ver Portafolio en GitHub Pages](https://tu-usuario.github.io/tu-repo/)  
-*(Reemplaza con tu enlace real una vez que publiques el proyecto)*  
+👉 [Ver Portafolio](https://portafolio-xi-eight-72.vercel.app/)
 
 ## 🛠️ Tecnologías utilizadas  
 
