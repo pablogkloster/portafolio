@@ -125,22 +125,6 @@ body {
     background-color: var(--color-hover);
 }
 
-.foto {
-  max-width: 50%;   
-}
-
-.footer {
-    background-color: var(--color-terciario);
-    padding: 1.35rem 0;
-    color: var(--color-primario);
-    text-align: center;
-    font-family: var(--fuente-montserrat);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-/*CÓDIGO SÓLO DEL CURRICULUM*/
-
 .presentacion-enlaces-texto {
   margin-bottom: 0.3rem; /* podés ajustar el valor */
   font-size: 1.3rem;
@@ -164,6 +148,20 @@ body {
   margin-right: 0.625rem; /* separa logo y texto */
   vertical-align: middle; /* alinea con el texto */
 } 
+
+.foto {
+  max-width: 50%;   
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 1.35rem 0;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 
 /* =======================
    ESTILOS PARA EL MODAL
@@ -201,25 +199,51 @@ body {
   color: #ccc;
 }
 
+/* ========== MEDIA QUERIES ========== */
+
 @media (max-width: 1200px) {
 
+  main {
+    overflow-y: visible;
+  }
+
   .header {
-    padding: 5%;
+    padding: 2%;
   }
 
   .header-menu {
     justify-content: center;
+    gap: 1.5rem; /* mucho más chico para móviles */
+    flex-wrap: wrap; /* si igual no entran, que bajen ordenadamente */
+  }
+
+  .header-menu-link {
+    font-size: 1.2rem; /* opcional: achicar fuente en móviles */
   }
 
   .presentacion {
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 1.5rem;
-      padding: 5%;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5%;
     }
   
-  .presentacion-contenido {
-    width: auto;
+.presentacion-contenido {
+  width: auto;
+}  
 
-  }  
+.presentacion-contenido-titulo {
+  font-size: 1.75rem; 
+  text-align: center; 
+}
+
+.presentacion-contenido-texto {
+  font-size: 1rem;
+}
+
+.footer {
+    padding: 0.8rem 0;   /* menos alto */
+    font-size: 1rem;     /* texto más chico */
+  }
+
 }
