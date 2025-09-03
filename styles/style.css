@@ -250,6 +250,16 @@ body {
   font-size: 1rem;
 }
 
+.modal-contenido {
+    max-width: 95%;   /* ocupa casi todo el ancho del celular */
+    height: auto;     /* mantiene la proporción */
+  }
+
+  #imgModal {
+    width: 100%;      /* la imagen ocupa todo el contenedor */
+    height: auto;
+  }
+
 .footer {
     padding: 0.8rem 0;   /* menos alto */
     font-size: 1rem;     /* texto más chico */
